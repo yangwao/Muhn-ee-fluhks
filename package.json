@@ -2,8 +2,9 @@
   "name": "muhn-ee-fluhks",
   "version": "1.0.0",
   "description": "art installation for bielanoc.sk in Bratislava at Progressbar",
-  "main": "index.js",
+  "main": "./txs.js",
   "scripts": {
+    "txs": "./txs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,9 +17,16 @@
     "f-word"
   ],
   "author": "yangwao <ybdaba@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yangwao/Muhn-ee-fluhks/issues"
   },
-  "homepage": "https://github.com/yangwao/Muhn-ee-fluhks#readme"
+  "homepage": "https://github.com/yangwao/Muhn-ee-fluhks#readme",
+  "dependencies": {
+    "json2csv": "^3.7.0",
+    "superagent": "^2.3.0"
+  },
+  "devDependencies": {
+    "request": "^2.75.0"
+  }
 }
