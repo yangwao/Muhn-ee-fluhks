@@ -1,7 +1,6 @@
 FROM node:6
 
 # ADD txs.js /src
-
 ADD . /src
 
 RUN cd /src && npm i
