@@ -1,0 +1,11 @@
+collect0r:
+  build: ./
+  dockerfile: Dockerfile
+  restart: "always"
+  log_driver: "json-file"
+  log_opt:
+    max-size: "10M"
+    max-file: "2"
+  volumes:
+    - "./README.md:/src/README.md"
+    - ./txs:/src

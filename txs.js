@@ -21,6 +21,7 @@ var r = require('request')
           try {
             csv = json2csv({ data: body.txs, fields: fields, eol: ';', hasCSVColumnTitle: false })
             fs.appendFile('./txs.csv', csv)
+            console.log('bytes written', csv.length);
           } catch (err) {
             console.error(err);
           }
